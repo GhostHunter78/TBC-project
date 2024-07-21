@@ -5,3 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
     this.classList.toggle("open");
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryContainer = document.querySelector(".gallery-container");
+
+  // Example: Auto-scroll to the right on load
+  galleryContainer.scrollTo({
+    left: galleryContainer.scrollWidth,
+    behavior: "smooth",
+  });
+});

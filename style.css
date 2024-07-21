@@ -316,6 +316,7 @@ body {
   align-items: flex-start;
   row-gap: 16px;
   padding: 0 15px;
+  margin-bottom: 72px;
 }
 
 .number-card {
@@ -341,4 +342,128 @@ body {
   font-weight: 600;
   color: #555f62;
   line-height: 1.7;
+}
+
+.offers-section {
+  width: 100%;
+  padding: 0 15px 60px 15px;
+}
+
+.offers-headline-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offers-section-label {
+  font-size: 14px;
+  color: #141719;
+  font-weight: 700;
+}
+
+.arrowAndText2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gallery-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.gallery-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+.gallery-item {
+  min-width: 280px;
+  height: auto;
+  border: 1px solid #e1e4e5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+}
+
+.photo-container {
+  position: relative;
+}
+
+.gallery-photo {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.gallery-logo {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  width: 78px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 6px 0 0 6px;
+  overflow: hidden;
+}
+
+.gallery-content-div {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.gallery-content-title-container {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 12px;
+}
+
+.gallery-content-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6f787b;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gallery-content-description {
+  color: #141719;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Custom scrollbar styles */
+.gallery-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+.gallery-container::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
 }
