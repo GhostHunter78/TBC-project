@@ -467,3 +467,35 @@ body {
 .gallery-container::-webkit-scrollbar-thumb:hover {
   background: #0056b3;
 }
+
+.digital-bank-section {
+  margin-bottom: 72px;
+  background-color: white;
+  padding: 32px 15px;
+}
+
+.digital-bank-description {
+  color: #555f62;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.7;
+  padding-bottom: 24px;
+}
+
+.download-button {
+  width: 100%;
+  border: 1px solid #182cc0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #f9fafa;
+}
+
+.download-button-text {
+  color: #182cc0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+}
