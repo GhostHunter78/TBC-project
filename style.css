@@ -550,3 +550,121 @@ body {
   font-weight: 400;
   line-height: 1.7;
 }
+
+.footer {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #d1d5d6;
+}
+
+.footer-heading-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 15px;
+  border-bottom: 1px solid #d1d5d6;
+}
+
+.language-main-div {
+  position: relative;
+  height: 40px;
+  background-color: #f9fafa;
+  padding-left: 12px;
+  padding-right: 12px;
+  grid-column-gap: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.active-language {
+  color: #555f62;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-box {
+  width: 100%;
+  border-bottom: 1px solid #d1d5d6;
+}
+
+.footer-box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 15px;
+}
+
+.title-and-arrow-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-box-hidden-text {
+  color: #555f62;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-hidden-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, opacity 0.7s linear,
+    transform 0.7s linear;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.footer-box-hidden-text-1 {
+  padding-top: 20px;
+}
+
+.footer-box.active .footer-hidden-box {
+  max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: max-height 0.7s ease-in, opacity 0.7s linear,
+    transform 0.7s linear;
+}
+
+.down-arrow-icon {
+  transition: transform 0.5s ease;
+}
+
+.active .down-arrow-icon {
+  transform: rotate(180deg);
+}
+
+.contacts-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 32px;
+  margin-bottom: 48px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.icon-div {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9fafa;
+  border-radius: 6px;
+}
