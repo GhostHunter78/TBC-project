@@ -17,6 +17,14 @@ body {
   padding-top: 80px;
 }
 
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
 .header-content {
   width: 100%;
   padding: 24px 15px;
@@ -557,7 +565,7 @@ body {
   border-bottom: 1px solid #d1d5d6;
 }
 
-.footer-heading-div {
+#footer-heading-div {
   width: 100%;
   display: flex;
   align-items: center;
