@@ -19,7 +19,11 @@
   <body>
     <header class="header">
       <div class="header-content global-padding">
-        <img src="./assets/images/logo.svg" />
+        <img class="header-logo-mobile" src="./assets/images/logo.svg" />
+        <img
+          class="header-logo-tablet"
+          src="./assets/icons/tablet-header-logo.svg"
+        />
         <div class="header-rightSide">
           <svg
             data-v-562b0aec=""
@@ -60,7 +64,6 @@
     </header>
     <main id="main-content">
       <div class="main-page-btn global-padding">
-        <img src="./assets/icons/left-arrow-icon.svg" />
         <p class="main-page-btn-text">მთავარი</p>
       </div>
       <section class="concept-section">
@@ -68,6 +71,10 @@
           <img
             class="library-img"
             src="./assets/images/mobile/library-pic-mobile.png.png"
+          />
+          <img
+            class="library-img-tablet"
+            src="./assets/images/tablet/concept-section-bg-pic.webp"
           />
           <div class="overlay-div"></div>
           <div class="library-content-div">
@@ -91,8 +98,10 @@
       </section>
       <section class="collection-section">
         <p class="collection-section-label">შეარჩიეთ ნაკრები</p>
-        <div class="slider-div">
-          <div class="additional-slider-div additional-first-slider-div">
+        <div class="slider-div tablet-grid-div">
+          <div
+            class="additional-slider-div additional-first-slider-div tablet-first-slider"
+          >
             <div class="main-sliding-card">
               <img
                 class="sliding-card-img"
@@ -109,7 +118,7 @@
             </div>
           </div>
 
-          <div class="additional-slider-div">
+          <div class="additional-slider-div tablet-high-grid-card">
             <div class="main-sliding-card">
               <img
                 class="sliding-card-img"
@@ -329,20 +338,27 @@
       </div>
 
       <section class="digital-bank-section">
-        <p class="offers-section-label" style="padding-bottom: 24px">
-          ციფრული ბანკი
-        </p>
+        <div class="tablet-block-div">
+          <p class="offers-section-label" style="padding-bottom: 24px">
+            ციფრული ბანკი
+          </p>
+          <img
+            style="width: 100%; padding-bottom: 24px"
+            class="phone-image-mobile"
+            src="./assets/images/mobile/mobile-pic.png"
+          />
+          <p class="digital-bank-description">
+            შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის დახმარებით
+          </p>
+          <button class="download-button">
+            <img src="./assets/icons/download-icon.svg" />
+            <p class="download-button-text">DOWNLOAD</p>
+          </button>
+        </div>
         <img
-          style="width: 100%; padding-bottom: 24px"
+          class="phone-image-tablet"
           src="./assets/images/mobile/mobile-pic.png"
         />
-        <p class="digital-bank-description">
-          შეასრულეთ საბანკო ოპერაციები დისტანციურად, ციფრული ბანკის დახმარებით
-        </p>
-        <button class="download-button">
-          <img src="./assets/icons/download-icon.svg" />
-          <p class="download-button-text">DOWNLOAD</p>
-        </button>
       </section>
 
       <section class="offers-section">
@@ -434,6 +450,11 @@
             class="library-img"
             src="./assets/images/mobile/private-banker-pic.png"
           />
+          <img
+            style="min-height: 352px"
+            class="library-img-tablet"
+            src="./assets/images/tablet/tablet-woman-img.png"
+          />
           <div class="overlay-div"></div>
           <div class="library-content-div">
             <h2 class="concept-title">პირადი ბანკირი</h2>
@@ -461,7 +482,7 @@
               "
               class="gallery-item first-gallery-item"
             >
-              <div class="gallery-content-div">
+              <div class="gallery-content-div tablet-gallery-content-div">
                 <img
                   style="height: 52px; margin-bottom: 24px"
                   src="./assets/images/mobile/global-finance.png"
@@ -484,7 +505,7 @@
               "
               class="gallery-item"
             >
-              <div class="gallery-content-div">
+              <div class="gallery-content-div tablet-gallery-content-div">
                 <img
                   style="height: 52px; margin-bottom: 24px"
                   src="./assets/images/mobile/euromoney-pic.png"
@@ -507,7 +528,7 @@
               "
               class="gallery-item"
             >
-              <div class="gallery-content-div">
+              <div class="gallery-content-div tablet-gallery-content-div">
                 <img
                   style="height: 52px; margin-bottom: 24px"
                   src="./assets/images/mobile/global-finance.png"
@@ -530,7 +551,7 @@
               "
               class="gallery-item last-gallery-item"
             >
-              <div class="gallery-content-div">
+              <div class="gallery-content-div tablet-gallery-content-div">
                 <img
                   style="height: 52px; margin-bottom: 24px"
                   src="./assets/images/mobile/the-banker-pic.png"
@@ -563,7 +584,10 @@
       <div class="footer-box">
         <div class="footer-box-content global-padding">
           <div class="title-and-arrow-div">
-            <p style="font-size: 16px" class="offers-section-label">
+            <p
+              style="font-size: 16px"
+              class="offers-section-label footer-box-label"
+            >
               პროდუქტები
             </p>
             <img
@@ -586,7 +610,10 @@
       <div class="footer-box">
         <div class="footer-box-content global-padding">
           <div class="title-and-arrow-div">
-            <p style="font-size: 16px" class="offers-section-label">
+            <p
+              style="font-size: 16px"
+              class="offers-section-label footer-box-label footer-lifestyle-box"
+            >
               Lifestyle
             </p>
             <img
@@ -609,7 +636,10 @@
       <div class="footer-box">
         <div class="footer-box-content global-padding">
           <div class="title-and-arrow-div">
-            <p style="font-size: 16px" class="offers-section-label">
+            <p
+              style="font-size: 16px"
+              class="offers-section-label footer-box-label"
+            >
               კონცეპტის სივრცე
             </p>
             <img
@@ -699,6 +729,7 @@
           column-gap: 30px;
           margin-bottom: 24px;
         "
+        class="rules-and-conditions"
       >
         <p style="padding-bottom: 0" class="digital-bank-description">
           კონფიდენციალურობა

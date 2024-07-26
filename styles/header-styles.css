@@ -1,3 +1,7 @@
+.header-logo-tablet {
+  display: none;
+}
+
 .header-content {
   width: 100%;
   padding: 24px 15px;
@@ -122,4 +126,14 @@
   height: 2px;
   top: 8px;
   left: 0px;
+}
+
+@media (min-width: 768px) {
+  .header-logo-tablet {
+    display: block;
+  }
+
+  .header-logo-mobile {
+    display: none;
+  }
 }

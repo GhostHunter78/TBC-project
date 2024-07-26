@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   hamburgerMenu.addEventListener("click", function () {
     const mainContent = document.getElementById("main-content");
-    const copyRightsSection = document.getElementById("copy-rights-section");
+    const lifestyle = document.querySelector(".footer-lifestyle-box");
     const menuHeadingDiv = document.getElementById("footer-heading-div");
     const additionalMenuText = document.querySelectorAll(
       ".additional-menu-text"
@@ -18,12 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
       additionalMenuText.forEach((text) => {
         text.classList.remove("hidden");
       });
+      lifestyle.textContent = "შეთავაზებები";
     } else {
       menuHeadingDiv.classList.remove("hidden");
       menuHeadingDiv.classList.add("flex");
       additionalMenuText.forEach((text) => {
         text.classList.add("hidden");
       });
+      lifestyle.textContent = "Lifestyle";
     }
   });
 
