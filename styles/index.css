@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #f9fafa;
+  font-family: sans-serif;
+  margin: 0;
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.global-padding {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+@media (min-width: 480px) {
+  .global-padding {
+    padding-left: 45px !important;
+    padding-right: 45px !important;
+  }
+}

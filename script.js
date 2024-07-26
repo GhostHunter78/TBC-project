@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     this.classList.toggle("open");
     mainContent.classList.toggle("hidden");
-    copyRightsSection.classList.toggle("hidden");
 
     if (this.classList.contains("open")) {
       menuHeadingDiv.classList.remove("flex");

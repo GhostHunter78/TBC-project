@@ -9,12 +9,16 @@
       sizes="32x32"
       href="/assets/icons/logo-icon.svg"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/header-styles.css" />
+    <link rel="stylesheet" href="./styles/main-content-styles.css" />
+    <link rel="stylesheet" href="./styles/footer-styles.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
     <title>თიბისი კონცეპტი | TBC Concept</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-content">
+      <div class="header-content global-padding">
         <img src="./assets/images/logo.svg" />
         <div class="header-rightSide">
           <svg
@@ -55,7 +59,7 @@
       </div>
     </header>
     <main id="main-content">
-      <div class="main-page-btn">
+      <div class="main-page-btn global-padding">
         <img src="./assets/icons/left-arrow-icon.svg" />
         <p class="main-page-btn-text">მთავარი</p>
       </div>
@@ -79,7 +83,7 @@
           </div>
         </div>
       </section>
-      <section class="big-message-section">
+      <section class="big-message-section global-padding">
         <h2 class="message-text">
           გამოიწერეთ თიბისი კონცეპტის ნაკრები და ისარგებლეთ როგორც საბანკო, ისე
           არასაბანკო უპირატესობებით.
@@ -88,7 +92,7 @@
       <section class="collection-section">
         <p class="collection-section-label">შეარჩიეთ ნაკრები</p>
         <div class="slider-div">
-          <div class="additional-slider-div">
+          <div class="additional-slider-div additional-first-slider-div">
             <div class="main-sliding-card">
               <img
                 class="sliding-card-img"
@@ -122,7 +126,7 @@
             </div>
           </div>
 
-          <div class="additional-slider-div">
+          <div class="additional-slider-div additional-last-slider-div">
             <div class="main-sliding-card">
               <img
                 class="sliding-card-img"
@@ -141,7 +145,7 @@
         </div>
       </section>
 
-      <section class="number-cards-section">
+      <section class="number-cards-section global-padding">
         <div class="number-card">
           <h1 class="number-card-number">94 750</h1>
           <p class="number-card-title">მომხმარებელი</p>
@@ -178,7 +182,7 @@
         </div>
         <div class="gallery-container">
           <div class="gallery-wrapper">
-            <div class="gallery-item">
+            <div class="gallery-item first-gallery-item">
               <img
                 src="./assets/images/mobile/iveria-beach-pic.jpg"
                 alt="IVERIA BEACH"
@@ -294,8 +298,7 @@
                 </p>
               </div>
             </div>
-
-            <div class="gallery-item">
+            <div class="gallery-item last-gallery-item">
               <div class="photo-container">
                 <img
                   src="./assets/images/mobile/pulse-pic.png"
@@ -320,6 +323,11 @@
           </div>
         </div>
       </section>
+
+      <div class="indicator-container">
+        <div class="indicator"></div>
+      </div>
+
       <section class="digital-bank-section">
         <p class="offers-section-label" style="padding-bottom: 24px">
           ციფრული ბანკი
@@ -343,7 +351,7 @@
         </div>
         <div class="gallery-container">
           <div class="gallery-wrapper">
-            <div class="gallery-item">
+            <div class="gallery-item first-gallery-item">
               <img
                 style="max-height: 156px"
                 src="./assets/images/mobile/slider-images-digital.png"
@@ -391,7 +399,7 @@
               </div>
             </div>
 
-            <div class="gallery-item">
+            <div class="gallery-item last-gallery-item">
               <img
                 style="max-height: 156px"
                 src="./assets/images/mobile/slider-images-360.png"
@@ -414,6 +422,11 @@
           </div>
         </div>
       </section>
+
+      <div class="indicator-container">
+        <div class="indicator"></div>
+      </div>
+
       <section style="padding-bottom: 72px" class="concept-section">
         <div class="library-div">
           <img
@@ -446,7 +459,7 @@
                 border-radius: 6px;
                 height: fit-content;
               "
-              class="gallery-item"
+              class="gallery-item first-gallery-item"
             >
               <div class="gallery-content-div">
                 <img
@@ -515,7 +528,7 @@
                 border-radius: 6px;
                 height: fit-content;
               "
-              class="gallery-item"
+              class="gallery-item last-gallery-item"
             >
               <div class="gallery-content-div">
                 <img
@@ -534,9 +547,13 @@
           </div>
         </div>
       </section>
+
+      <div class="indicator-container">
+        <div class="indicator"></div>
+      </div>
     </main>
     <footer class="footer">
-      <div id="footer-heading-div">
+      <div id="footer-heading-div" class="global-padding">
         <img class="footer-tbc-logo" src="./assets/icons/dark-tbc-icon.svg" />
         <div class="language-main-div">
           <img class="language-icon" src="./assets/icons/language-icon.svg" />
@@ -544,7 +561,7 @@
         </div>
       </div>
       <div class="footer-box">
-        <div class="footer-box-content">
+        <div class="footer-box-content global-padding">
           <div class="title-and-arrow-div">
             <p style="font-size: 16px" class="offers-section-label">
               პროდუქტები
@@ -567,7 +584,7 @@
       </div>
 
       <div class="footer-box">
-        <div class="footer-box-content">
+        <div class="footer-box-content global-padding">
           <div class="title-and-arrow-div">
             <p style="font-size: 16px" class="offers-section-label">
               Lifestyle
@@ -590,7 +607,7 @@
       </div>
 
       <div class="footer-box">
-        <div class="footer-box-content">
+        <div class="footer-box-content global-padding">
           <div class="title-and-arrow-div">
             <p style="font-size: 16px" class="offers-section-label">
               კონცეპტის სივრცე
@@ -615,7 +632,10 @@
         </div>
       </div>
 
-      <div style="padding: 32px 15px" class="footer-contact-section">
+      <div
+        style="padding: 32px 15px"
+        class="footer-contact-section global-padding"
+      >
         <p
           style="font-size: 16px; margin-bottom: 32px"
           class="offers-section-label"
@@ -667,7 +687,11 @@
         </div>
       </div>
     </footer>
-    <section id="copy-rights-section" style="padding: 24px 15px">
+    <section
+      id="copy-rights-section"
+      class="global-padding"
+      style="padding: 24px 15px"
+    >
       <div
         style="
           display: flex;
