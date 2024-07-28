@@ -45,3 +45,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// const bottomMenuOpenIcon = document.querySelector(".bottom-menu-open-icon");
+// const bottomMenuCloseIcon = document.querySelector(".bottom-menu-close-icon");
+// const bottomMenuItems = document.querySelector(".bottom-menu-hidden-items");
+
+// bottomMenuOpenIcon.addEventListener("click", () => {
+//   bottomMenuOpenIcon.style.display = "none";
+//   bottomMenuCloseIcon.style.display = "flex";
+//   bottomMenuItems.style.display = "flex";
+// });
+
+// bottomMenuCloseIcon.addEventListener("click", () => {
+//   bottomMenuOpenIcon.style.display = "flex";
+//   bottomMenuCloseIcon.style.display = "none";
+//   bottomMenuItems.style.display = "none";
+// });
+
+const bottomMenuOpenIcon = document.querySelector(".bottom-menu-open-icon");
+const bottomMenuCloseIcon = document.querySelector(".bottom-menu-close-icon");
+const bottomMenuItems = document.querySelector(".bottom-menu-hidden-items");
+
+bottomMenuOpenIcon.addEventListener("click", () => {
+  bottomMenuOpenIcon.classList.add("hide");
+  setTimeout(() => {
+    bottomMenuOpenIcon.style.display = "none";
+    bottomMenuCloseIcon.style.display = "flex";
+    bottomMenuCloseIcon.style.opacity = "1";
+    setTimeout(() => bottomMenuCloseIcon.classList.remove("hide"), 10);
+    bottomMenuItems.classList.add("show");
+  }, 500); // Match this with the transition duration
+});
+
+bottomMenuCloseIcon.addEventListener("click", () => {
+  bottomMenuCloseIcon.classList.add("hide");
+
+  setTimeout(() => {
+    bottomMenuCloseIcon.style.display = "none";
+    bottomMenuOpenIcon.style.display = "flex";
+    bottomMenuCloseIcon.style.opacity = "0";
+    setTimeout(() => bottomMenuOpenIcon.classList.remove("hide"), 10);
+    bottomMenuItems.classList.remove("show");
+  }, 500); // Match this with the transition duration
+});

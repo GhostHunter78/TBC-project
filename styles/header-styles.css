@@ -1,4 +1,6 @@
-.header-logo-tablet {
+.header-logo-tablet,
+.desktop-menu-items,
+.language-header-div {
   display: none;
 }
 
@@ -131,9 +133,97 @@
 @media (min-width: 768px) {
   .header-logo-tablet {
     display: block;
+    cursor: pointer;
   }
 
   .header-logo-mobile {
     display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .global-padding {
+    padding-left: 210px !important;
+    padding-right: 210px !important;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .desktop-menu-items {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .desktop-menu-item {
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .header-left-side {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .blue-text {
+    font-size: 14px;
+  }
+
+  .language-header-div {
+    grid-column-gap: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+  }
+  .search-icon:hover {
+    fill: #3295ce;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .arrowAndText:hover .blue-text {
+    color: #3295ce;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .arrowAndText:hover .left-arrow-icon path {
+    fill: #3295ce;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .lang-hover-div {
+    display: none;
+    position: absolute;
+    border: 1px solid rgb(197, 195, 195);
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    font-size: 15px;
+    background-color: white;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+
+  .lang-relative-div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .lang-relative-div:hover .lang-hover-div,
+  .lang-hover-div:hover {
+    display: flex !important;
+  }
+
+  .lang-hover-div:hover {
+    cursor: pointer;
   }
 }

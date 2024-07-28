@@ -116,6 +116,86 @@
   border-radius: 6px;
 }
 
+.desktop-footer {
+  display: none;
+}
+
+.bottom-menu-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #424a4d;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.bottom-menu-btn:hover {
+  background-color: #555f62;
+  transition: 0.3s;
+}
+
+.bottom-menu-hidden-items {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+  z-index: 100;
+}
+
+.bottom-menu-hidden-item {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #eef1f1;
+  background-color: white;
+  cursor: pointer;
+}
+
+.bottom-menu-open-icon,
+.bottom-menu-close-icon {
+  display: flex;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+.bottom-menu-close-icon {
+  display: none;
+  opacity: 0;
+}
+
+.bottom-menu-hidden-items {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.bottom-menu-hidden-items.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.lang-hover-div {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .footer-box-content {
     padding: 32px 45px;
@@ -143,5 +223,54 @@
 
   .rules-and-conditions {
     margin-bottom: 0 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: none;
+  }
+
+  .desktop-footer {
+    display: block;
+    background: white;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #bcc0c280;
+  }
+
+  .desktop-footer-heading-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .desktop-footer-content {
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+  }
+
+  .desktop-footer-list-label {
+    margin-bottom: 25px !important;
+  }
+
+  .footer-box-hidden-text:hover,
+  .rights-text:hover {
+    color: #182cc0;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .contact-item:hover .footer-contact-items {
+    text-decoration: underline;
+  }
+
+  .soc-net-icon:hover {
+    fill: #182cc0;
+    cursor: pointer;
   }
 }

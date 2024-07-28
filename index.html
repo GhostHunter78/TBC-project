@@ -19,13 +19,21 @@
   <body>
     <header class="header">
       <div class="header-content global-padding">
-        <img class="header-logo-mobile" src="./assets/images/logo.svg" />
-        <img
-          class="header-logo-tablet"
-          src="./assets/icons/tablet-header-logo.svg"
-        />
+        <div class="header-left-side">
+          <img class="header-logo-mobile" src="./assets/images/logo.svg" />
+          <img
+            class="header-logo-tablet"
+            src="./assets/icons/tablet-header-logo.svg"
+          />
+          <div class="desktop-menu-items">
+            <p class="desktop-menu-item">პროდუქტები</p>
+            <p class="desktop-menu-item">შეთავაზებები</p>
+            <p class="desktop-menu-item">კონცეპტის სივრცე</p>
+          </div>
+        </div>
         <div class="header-rightSide">
           <svg
+            class="search-icon"
             data-v-562b0aec=""
             width="35"
             height="35"
@@ -40,6 +48,7 @@
           </svg>
           <div class="arrowAndText">
             <svg
+              class="left-arrow-icon"
               data-v-562b0aec=""
               width="16"
               height="16"
@@ -53,6 +62,16 @@
               ></path>
             </svg>
             <p class="blue-text">გამოიწერეთ ნაკრები</p>
+          </div>
+          <div style="position: relative" class="lang-relative-div">
+            <div class="language-header-div">
+              <img
+                class="language-icon"
+                src="./assets/icons/language-icon.svg"
+              />
+              <p class="active-language">ქარ</p>
+            </div>
+            <div class="lang-hover-div">Eng</div>
           </div>
           <div id="hamburger-menu">
             <span></span>
@@ -174,6 +193,7 @@
           <p class="offers-section-label">შეთავაზებები</p>
           <div class="arrowAndText2">
             <svg
+              class="right-arrow-icon"
               data-v-562b0aec=""
               width="16"
               height="16"
@@ -354,6 +374,14 @@
             <img src="./assets/icons/download-icon.svg" />
             <p class="download-button-text">DOWNLOAD</p>
           </button>
+          <div class="desktop-download-buttons">
+            <div class="playstore-btn">
+              <img class="playstore-img" src="./assets/icons/play-store.svg" />
+            </div>
+            <div class="playstore-btn">
+              <img class="playstore-img" src="./assets/icons/app-store.svg" />
+            </div>
+          </div>
         </div>
         <img
           class="phone-image-tablet"
@@ -372,7 +400,7 @@
                 style="max-height: 156px"
                 src="./assets/images/mobile/slider-images-digital.png"
                 alt="products-digital"
-                class="gallery-photo"
+                class="gallery-photo products-gallery-photo"
               />
               <div class="gallery-content-div">
                 <p class="products-card-title">ციფრული</p>
@@ -397,7 +425,7 @@
                 style="max-height: 156px"
                 src="./assets/images/mobile/slider-images-premium.png"
                 alt="products-premium"
-                class="gallery-photo"
+                class="gallery-photo products-gallery-photo"
               />
               <div class="gallery-content-div">
                 <p class="products-card-title">პრემიუმი</p>
@@ -420,7 +448,7 @@
                 style="max-height: 156px"
                 src="./assets/images/mobile/slider-images-360.png"
                 alt="products-360"
-                class="gallery-photo"
+                class="gallery-photo products-gallery-photo"
               />
               <div class="gallery-content-div">
                 <p class="products-card-title">360</p>
@@ -717,6 +745,134 @@
         </div>
       </div>
     </footer>
+    <div class="desktop-footer global-padding">
+      <div class="desktop-footer-heading-div">
+        <img
+          style="cursor: pointer"
+          src="./assets/icons/desktop-footer-logo.svg"
+        />
+        <div style="position: relative" class="lang-relative-div">
+          <div class="language-header-div">
+            <img class="language-icon" src="./assets/icons/language-icon.svg" />
+            <p class="active-language">ქარ</p>
+          </div>
+          <div class="lang-hover-div">Eng</div>
+        </div>
+      </div>
+      <div class="desktop-footer-content">
+        <div class="desktop-footer-list-div">
+          <p
+            style="cursor: pointer"
+            class="desktop-footer-list-label products-card-title"
+          >
+            პროდუქტები
+          </p>
+          <p
+            style="font-size: 16px !important; margin-bottom: 20px"
+            class="footer-box-hidden-text"
+          >
+            ნაკრები
+          </p>
+          <p style="font-size: 16px !important" class="footer-box-hidden-text">
+            პერსონალური ბანკირი
+          </p>
+        </div>
+
+        <div class="desktop-footer-list-div">
+          <p
+            style="cursor: pointer"
+            class="desktop-footer-list-label products-card-title"
+          >
+            Lifestyle
+          </p>
+          <p
+            style="font-size: 16px !important; margin-bottom: 20px"
+            class="footer-box-hidden-text"
+          >
+            შეთავაზებები
+          </p>
+          <p style="font-size: 16px !important" class="footer-box-hidden-text">
+            ღონისძიებები
+          </p>
+        </div>
+
+        <div style="margin-left: 80px" class="desktop-footer-list-div">
+          <p
+            style="cursor: pointer"
+            class="desktop-footer-list-label products-card-title"
+          >
+            კონცეპტის სივრცე
+          </p>
+          <p
+            style="font-size: 16px !important; margin-bottom: 20px"
+            class="footer-box-hidden-text"
+          >
+            ბიბლიოთეკა
+          </p>
+          <p style="font-size: 16px !important" class="footer-box-hidden-text">
+            კაფე
+          </p>
+        </div>
+
+        <div class="footer-contact-section">
+          <p
+            style="font-size: 16px; margin-bottom: 32px"
+            class="offers-section-label"
+          >
+            დაგვიკავშირდით:
+          </p>
+          <div class="contacts-div">
+            <div style="cursor: pointer" class="contact-item">
+              <img src="./assets/icons/phone-icon.svg" />
+              <p
+                style="margin-bottom: 0; font-size: 16px"
+                class="gallery-content-title footer-contact-items"
+              >
+                +995 32 2 27 27 00
+              </p>
+            </div>
+            <div style="cursor: pointer" class="contact-item">
+              <img src="./assets/icons/mail-icon.svg" />
+              <p
+                style="margin-bottom: 0; font-size: 16px"
+                class="gallery-content-title footer-contact-items"
+              >
+                info@tbcconcept.ge
+              </p>
+            </div>
+            <div style="cursor: pointer" class="contact-item">
+              <img src="./assets/icons/location-icon.svg" />
+              <p
+                style="margin-bottom: 0; font-size: 16px"
+                class="gallery-content-title footer-contact-items"
+              >
+                ფილიალები
+              </p>
+            </div>
+          </div>
+          <p
+            style="font-size: 16px; margin-bottom: 24px"
+            class="offers-section-label"
+          >
+            სოცილაური ქსელები
+          </p>
+          <div style="column-gap: 15px" class="soc-net-icons-div contact-item">
+            <div class="icon-div">
+              <img
+                class="soc-net-icon"
+                src="./assets/icons/facebook-icon.svg"
+              />
+            </div>
+            <div class="icon-div">
+              <img
+                class="soc-net-icon"
+                src="./assets/icons/instagram-icon.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <section
       id="copy-rights-section"
       class="global-padding"
@@ -731,10 +887,16 @@
         "
         class="rules-and-conditions"
       >
-        <p style="padding-bottom: 0" class="digital-bank-description">
+        <p
+          style="padding-bottom: 0"
+          class="digital-bank-description rights-text"
+        >
           კონფიდენციალურობა
         </p>
-        <p style="padding-bottom: 0" class="digital-bank-description">
+        <p
+          style="padding-bottom: 0"
+          class="digital-bank-description rights-text"
+        >
           წესები და პირობები
         </p>
       </div>
@@ -748,6 +910,27 @@
         </p>
       </div>
     </section>
+    <div class="bottom-menu-hidden-items">
+      <div class="bottom-menu-hidden-item">
+        <img src="./assets/icons/bottom-menu-gmail-icon.svg" />
+      </div>
+      <div class="bottom-menu-hidden-item">
+        <img src="./assets/icons/bottom-menu-call-icon.svg" />
+      </div>
+      <div class="bottom-menu-hidden-item">
+        <img src="./assets/icons/bottom-menu-location-icon.svg" />
+      </div>
+    </div>
+    <div class="bottom-menu-btn">
+      <img
+        class="bottom-menu-open-icon"
+        src="./assets/icons/bottom-menu-open-icon.svg"
+      />
+      <img
+        class="bottom-menu-close-icon"
+        src="./assets/icons/bottom-menu-close-icon.svg"
+      />
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
