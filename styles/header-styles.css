@@ -1,6 +1,8 @@
 .header-logo-tablet,
 .desktop-menu-items,
-.language-header-div {
+.language-header-div
+/* ,
+.desktop-header-deopdown-menu  */ {
   display: none;
 }
 
@@ -142,6 +144,82 @@
 }
 
 @media (min-width: 1024px) {
+  .desktop-header-deopdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 105;
+    padding: 0;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  .desktop-header-deopdown-menu.visible {
+    /* display: block; */
+    max-height: 248px;
+    padding: 32px 0;
+  }
+
+  .dropdown-list-div {
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+  }
+
+  .dropdown-concept-list {
+    margin-left: 32px;
+  }
+
+  .dropdown-list-div.active {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    max-height: 100px;
+    transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out,
+      opacity 0.3s ease-in-out;
+  }
+
+  .desktop-header-dropdown-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 210px;
+    display: flex;
+    align-items: flex-start;
+    gap: 45px;
+  }
+
+  .dropdown-leftside-div {
+    width: fit-content;
+  }
+
+  .dropdown-list-divs {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .dropdown-list-item {
+    max-width: 140px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+    text-align: left;
+    cursor: pointer;
+    color: #000;
+  }
+
+  .dropdown-list-item:hover {
+    color: #182cc0;
+    transition: 0.3s;
+  }
+
   .global-padding {
     padding-left: 210px !important;
     padding-right: 210px !important;

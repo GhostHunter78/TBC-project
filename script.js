@@ -157,3 +157,71 @@ sliders.forEach((slider, index) => {
     updateIndicator();
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll(".desktop-menu-item");
+  const dropdownMenu = document.querySelector(".desktop-header-deopdown-menu");
+  const dropdownLists = document.querySelectorAll(".dropdown-list-div");
+  let activeItemIndex = null;
+
+  menuItems.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      // If the clicked item is the currently active item, then hide the dropdown menu
+      if (activeItemIndex === index) {
+        dropdownLists.forEach((list) => {
+          list.classList.remove("active");
+        });
+        dropdownMenu.classList.remove("visible");
+        activeItemIndex = null; // Reset the active item index
+        return;
+      }
+
+      // Set the active item index to the clicked item
+      activeItemIndex = index;
+
+      // Removeing the active class from all dropdown lists
+      dropdownLists.forEach((list) => {
+        list.classList.remove("active");
+      });
+
+      // Getting the target class name based on the clicked menu item
+      let target;
+      switch (index) {
+        case 0:
+          target = "products-list";
+          break;
+        case 1:
+          target = "offers-list";
+          break;
+        case 2:
+          target = "concept-list";
+          break;
+        default:
+          target = "";
+      }
+
+      if (target) {
+        const targetElement = document.querySelector(`.dropdown-${target}`);
+        if (targetElement) {
+          targetElement.classList.add("active");
+        } else {
+          console.error(`Element with class .dropdown-${target} not found`);
+        }
+      }
+
+      // Displaying the dropdown menu
+      dropdownMenu.classList.add("visible");
+    });
+  });
+
+  function updatePosition() {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    dropdownMenu.style.top = `${scrollTop + 80}px`; // Adjust 80px to match your initial top value
+  }
+
+  window.addEventListener("scroll", updatePosition);
+  window.addEventListener("resize", updatePosition); // Adjust position on resize as well
+
+  // Initial call to set the correct position
+  updatePosition();
+});
