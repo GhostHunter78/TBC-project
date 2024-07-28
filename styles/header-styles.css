@@ -1,9 +1,12 @@
 .header-logo-tablet,
 .desktop-menu-items,
-.language-header-div
-/* ,
-.desktop-header-deopdown-menu  */ {
+.language-header-div {
   display: none;
+}
+
+.desktop-header-deopdown-menu {
+  opacity: 0;
+  position: absolute;
 }
 
 .header-content {
@@ -146,6 +149,7 @@
 @media (min-width: 1024px) {
   .desktop-header-deopdown-menu {
     max-height: 0;
+    opacity: 1;
     overflow: hidden;
     background-color: white;
     position: absolute;
