@@ -1,3 +1,4 @@
+// hamburger icon actions for mobile and tablet menu versions
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.getElementById("hamburger-menu");
 
@@ -29,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  //opening and closing toggle functionality for footer boxes
   const titleAndArrowDivs = document.querySelectorAll(".title-and-arrow-div");
   // closing the other opened box after the another one is clicked
   titleAndArrowDivs.forEach((div) => {
@@ -73,6 +75,7 @@ bottomMenuCloseIcon.addEventListener("click", () => {
   }, 500);
 });
 
+//custom slider horizontal scrollbars
 const sliders = document.querySelectorAll(".gallery-wrapper");
 const indicators = document.querySelectorAll(".indicator");
 
@@ -158,6 +161,7 @@ sliders.forEach((slider, index) => {
   }
 });
 
+//actions to toggle desktop's dropdown menu open/closing functionality
 document.addEventListener("DOMContentLoaded", function () {
   const menuItems = document.querySelectorAll(".desktop-menu-item");
   const dropdownMenu = document.querySelector(".desktop-header-deopdown-menu");
@@ -214,6 +218,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  // instead of giving position:fixed to dropdown menu, I gave it position absolute and
+  // this logic moves absolute positioned menu all over the page just like position fixed
   function updatePosition() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
     dropdownMenu.style.top = `${scrollTop + 80}px`; // Adjust 80px to match your initial top value
